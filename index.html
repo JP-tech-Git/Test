@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はじめてのWebサイト</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f4f8;
+      color: #263238;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .card {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 32px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px #00000012;
+    }
+
+    h1 {
+      color: #2563eb;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>はじめまして！</h1>
+    <p>これは私の最初のWebサイトです。</p>
+    <p>GitHubを使ってWeb制作を学んでいます。</p>
+    <button onclick="showMessage()">クリックしてね</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "ボタンが動きました！";
+    }
+  </script>
+</body>
+</html>
